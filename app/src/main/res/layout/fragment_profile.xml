@@ -63,11 +63,11 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="6dp"
-
             android:layout_marginTop="46dp"
             android:background="@null"
             android:padding="4dp"
             android:text="Edit Profile"
+            android:shadowColor="@color/white"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -76,7 +76,8 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="6dp"
-            android:layout_marginTop="6dp" />
+            android:layout_marginTop="6dp"
+            android:src="@drawable/setting" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -197,6 +198,7 @@
                 android:layout_column="1"
                 android:layout_marginRight="5dp"
                 android:layout_row="1">
+
                 <include layout="@layout/custom_profile_post" />
 
             </RelativeLayout>
@@ -205,36 +207,41 @@
                 android:layout_column="2"
                 android:layout_marginRight="5dp"
                 android:layout_row="1">
+
                 <include layout="@layout/custom_profile_post" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_column="3"
                 android:layout_row="1">
+
                 <include layout="@layout/custom_profile_post" />
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_marginTop="8dp"
                 android:layout_column="1"
                 android:layout_marginRight="5dp"
+                android:layout_marginTop="8dp"
                 android:layout_row="2">
+
                 <include layout="@layout/custom_profile_post" />
 
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_marginTop="8dp"
                 android:layout_column="2"
                 android:layout_marginRight="5dp"
+                android:layout_marginTop="8dp"
                 android:layout_row="2">
+
                 <include layout="@layout/custom_profile_post" />
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_marginTop="8dp"
                 android:layout_column="3"
+                android:layout_marginTop="8dp"
                 android:layout_row="2">
+
                 <include layout="@layout/custom_profile_post" />
             </RelativeLayout>
         </GridLayout>

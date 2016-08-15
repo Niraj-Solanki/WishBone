@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#25beff</color>
+    <color name="colorPrimaryDark">#25beff</color>
+    <color name="colorAccent">#25beff</color>
+    <color name="backgroundColor">#F1F2F4</color>
+    <color name="colorTitle">#ffffff</color>
+    <color name="transparent">#60d0d1d3</color>
+    <color name="Black">#ff000000</color>
+    <color name="Light_Black">#8d3e3e3e</color>
+    <color name="white">#ffffff</color>
+    <color name="Light_White">#fffcfcfc</color>
+    <color name="Sky_Blue">#ff02bff3</color>
+    <color name="Light_Pink">#cdf75785</color>
+    <color name="Pink">#f6ff5a89</color>
+    <color name="Dark_Blue">#f60f20ff</color>
+    <color name="Dark_Grey">#c7c2c2c2</color>
+    <color name="blue_head">#d63d3553</color>
+    <color name="Light_Blue">#ff21aae2</color>
+    <color name="Grey">#b33a3a3a</color>
+    <item name="blue" type="color">#ff02bff3</item>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="grey" type="color">#ffc6c6c6</item>
+    <item name="grey_light" type="color">#52efefef</item>
+    <item name="grey_dark" type="color">#f2ababab</item>
+    <item name="green" type="color">#FF99CC00</item>
+    <color name="ColorPrimary">#00897B</color>
+    <color name="ColorPrimaryDark">#ff343434</color>
+    <item name="orange" type="color">#FBB261</item>
+    <item name="Yellow" type="color">#e1cf0e</item>
+    <item name="red" type="color">#f6cf1919</item>
+    <item name="Darkgreen" type="color">#fd007c15</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#ff9b68ab</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="black" type="color">#ff000000</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+    <item name="Blue" type="color">#ff4052b5</item>
+    <item name="GreyLike" type="color">#39474D</item>
+    <item name="GreyLikeAccent" type="color">#42545b</item>
+    <item name="Blue_Light" type="color">#d34d60e8</item>
+
+
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen2</item>
+
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen2</item>
+    </array>
+    <color name="year">#999999</color>
+    <color name="brown">#4E342E</color>
+
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+
+</resources>
+

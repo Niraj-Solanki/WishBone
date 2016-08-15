@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/transparent"
     android:orientation="vertical"
-    tools:context="layout.PostType1">
+    tools:context="layout.PostType3">
 
 
     <RelativeLayout
@@ -58,7 +59,7 @@
         android:layout_below="@+id/relative1"
         android:layout_centerInParent="true"
         android:layout_centerVertical="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginTop="6dp"
@@ -67,56 +68,116 @@
         android:textColor="@color/Black"
         android:textSize="20dp" />
 
-    <ImageView
-        android:id="@+id/postimage"
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
+    <com.pixelcan.inkpageindicator.InkPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
         android:layout_below="@+id/question"
-        android:scaleType="fitXY"
-        android:src="@drawable/kabali1" />
+        app:animationDuration="320"
+        app:currentPageIndicatorColor="@color/colorPrimaryDark"
+        app:dotDiameter="8dp"
+        app:dotGap="8dp"
+        app:pageIndicatorColor="@color/Grey" />
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/relative2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/linear1"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        android:weightSum="3">
+        android:layout_height="260dp"
+        android:layout_below="@+id/indicator">
 
-
-        <ImageView
-            android:id="@+id/likethumb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_weight="1"
-            android:src="@drawable/ic_thumb_down_black_36dp" />
-
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="4dp"></android.support.v4.view.ViewPager>
 
         <TextView
+            android:id="@+id/votes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="6dp"
-            android:layout_weight="1"
-            android:text="OR" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="(829 Voted)" />
 
+        <LinearLayout
+            android:id="@+id/layer1"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/answer"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/wrong" />
+            <TextView
+                android:id="@+id/answerMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24dp"
+                android:textColor="@color/white"
+                android:text="You're Wrong" />
+            <TextView
+                android:id="@+id/ansSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Slide to know right answer" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layer2"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="11 %" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="answered like you" />
+        </LinearLayout>
 
         <ImageView
-            android:id="@+id/dislike"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_weight="1"
-            android:src="@drawable/ic_thumb_up_black_36dp" />
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/swiperight"
+            android:id="@+id/swiperight"/>
 
-    </LinearLayout>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/swipeleft"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/swipeleft" />
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/postimage"
+        android:layout_below="@id/relative2"
         android:orientation="horizontal"
         android:padding="16dp"
         android:weightSum="3">

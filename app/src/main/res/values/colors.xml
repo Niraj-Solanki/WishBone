@@ -41,7 +41,14 @@
     <item name="GreyLikeAccent" type="color">#42545b</item>
     <item name="Blue_Light" type="color">#d34d60e8</item>
 
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
 
+
+    <!-- dots inactive colors -->
     <color name="dot_dark_screen1">#d1395c</color>
     <color name="dot_dark_screen2">#14a895</color>
     <color name="dot_dark_screen3">#2278d4</color>
@@ -64,6 +71,16 @@
         <item>@color/dot_dark_screen2</item>
         <item>@color/dot_dark_screen2</item>
         <item>@color/dot_dark_screen2</item>
+    </array>
+    <array name="color">
+        <item>@color/colorPrimaryDark</item>
+        <item>#fefefe</item>
+        <item>#fefefe</item>
+    </array>
+    <array name="color1">
+        <item>@color/colorPrimaryDark</item>
+        <item>#fefefe</item>
+        <item>#fefefe</item>
     </array>
     <color name="year">#999999</color>
     <color name="brown">#4E342E</color>

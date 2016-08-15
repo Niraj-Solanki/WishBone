@@ -20,8 +20,8 @@ android {
 }
 
 dependencies {
-    compile 'com.pacioianu.david:ink-page-indicator:1.2.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.pacioianu.david:ink-page-indicator:1.2.0'
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha1'

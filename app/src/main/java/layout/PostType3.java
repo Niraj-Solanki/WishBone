@@ -28,9 +28,9 @@ public class PostType3 extends Fragment {
 
     ViewPager viewPager;
     public int[] GalImages = new int[]{
-            R.drawable.kabali1,
-            R.drawable.profile,
-            R.drawable.userprofile
+            R.drawable.first,
+            R.drawable.second,
+            R.drawable.third
     };
     public int[] Answer = new int[]{
             R.drawable.correct,

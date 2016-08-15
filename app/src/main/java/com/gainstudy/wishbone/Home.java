@@ -10,6 +10,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -21,20 +22,23 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import layout.PostType1;
 import layout.PostType2;
 import layout.PostType3;
+import layout.ProfileFragment;
 
 public class Home extends AppCompatActivity {
 
     private ViewPager viewPager;
     private int[] layouts;
-    ImageView imv;
-
+    ImageView imv, userHome, userProfile;
+    FrameLayout frameLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +52,28 @@ public class Home extends AppCompatActivity {
                 R.drawable.userprofile);
         Bitmap bb = Blur.blur(getApplicationContext(), icon);
         imv.setBackgroundDrawable(new BitmapDrawable(getResources(), bb));
+        frameLayout=(FrameLayout)findViewById(R.id.frame_container);
+        userHome = (ImageView) findViewById(R.id.userHome);
+        userProfile = (ImageView) findViewById(R.id.userProfile);
+        userHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                frameLayout.setVisibility(View.GONE);
+                viewPager.setVisibility(View.VISIBLE);
+                viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+            }
+        });
+        userProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                frameLayout.setVisibility(View.VISIBLE);
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.frame_container, new ProfileFragment());
+                ft.commit();
 
+                viewPager.setVisibility(View.GONE);
+            }
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -62,15 +87,6 @@ public class Home extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.view_pager);
 
 
-        // layouts of all welcome sliders
-        // add few more layouts if you want
-        layouts = new int[]{
-                R.layout.fragment_post_type1,
-                R.layout.fragment_post_type2,
-                R.layout.fragment_post_type3};
-
-
-        viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
     }
 
 

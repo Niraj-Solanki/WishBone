@@ -64,7 +64,7 @@
         android:layout_marginRight="25dp"
         android:layout_marginTop="6dp"
         android:gravity="center"
-        android:text="What is your review about kabali movie ?"
+        android:text="Who was the first prime minister of India ?"
         android:textColor="@color/Black"
         android:textSize="20dp" />
 

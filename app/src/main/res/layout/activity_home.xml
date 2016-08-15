@@ -47,6 +47,7 @@
             android:weightSum="8">
 
             <ImageView
+                android:id="@+id/userHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.5"
@@ -72,6 +73,7 @@
                 android:background="@color/grey_dark" />
 
             <ImageView
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
@@ -96,6 +98,7 @@
                 android:background="@color/grey_dark" />
 
             <ImageView
+                android:id="@+id/userProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.5"

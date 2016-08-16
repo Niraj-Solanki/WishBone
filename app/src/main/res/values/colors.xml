@@ -5,8 +5,9 @@
     <color name="colorAccent">#25beff</color>
     <color name="backgroundColor">#F1F2F4</color>
     <color name="colorTitle">#ffffff</color>
-    <color name="transparent">#59d0d1d3</color>
-    <color name="transparentDark">#c18a8e91</color>
+    <color name="transparent">#96d0d1d3</color>
+    <color name="transparentx">#a8b8b9ba</color>
+    <color name="transparentDark">#cc878889</color>
     <color name="Black">#ff000000</color>
     <color name="Light_Black">#8d3e3e3e</color>
     <color name="white">#ffffff</color>

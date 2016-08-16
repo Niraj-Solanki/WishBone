@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.gainstudy.wishbone.Home">
     <item
-        android:icon="@drawable/ic_search_white_36dp"
+        android:icon="@drawable/ic_search_white_24dp"
         android:id="@+id/search"
         android:title="Search"
         app:showAsAction="always" />

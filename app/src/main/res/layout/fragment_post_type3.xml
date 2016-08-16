@@ -3,245 +3,259 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/transparent"
+    android:layout_height="match_parent"
+    android:background="@null"
     android:orientation="vertical"
     tools:context="layout.PostType3">
 
-
     <RelativeLayout
-        android:id="@+id/relative1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="6dp">
-
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/profile_image"
-            android:layout_width="46dp"
-            android:layout_height="46dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/userprofile" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="6dp"
-            android:layout_toRightOf="@id/profile_image"
-            android:text="ThisIsUser"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/settingmenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/ic_more_vert_black_24dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="6dp"
-            android:layout_toLeftOf="@id/settingmenu"
-            android:text="10 Coins"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold" />
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/relative1"
         android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="6dp"
-        android:gravity="center"
-        android:text="Who was the first prime minister of India ?"
-        android:textColor="@color/Black"
-        android:textSize="20dp" />
+        android:background="@color/transparent">
 
-    <com.pixelcan.inkpageindicator.InkPageIndicator
-        android:id="@+id/indicator"
-        android:layout_width="fill_parent"
-        android:layout_height="20dp"
-        android:layout_below="@+id/question"
-        app:animationDuration="320"
-        app:currentPageIndicatorColor="@color/colorPrimaryDark"
-        app:dotDiameter="8dp"
-        app:dotGap="8dp"
-        app:pageIndicatorColor="@color/Grey" />
-
-    <RelativeLayout
-        android:id="@+id/relative2"
-        android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:layout_below="@+id/indicator">
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/view_pager"
+        <RelativeLayout
+            android:id="@+id/relative1"
             android:layout_width="match_parent"
-            android:layout_height="260dp"
-            android:layout_marginTop="4dp"></android.support.v4.view.ViewPager>
+            android:layout_height="wrap_content"
+            android:padding="6dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profilew" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:text="ThisIsUser"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/settingmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_more_vert_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@id/settingmenu"
+                android:text="10 Coins"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+        </RelativeLayout>
 
         <TextView
-            android:id="@+id/votes"
-            android:layout_width="wrap_content"
+            android:id="@+id/question"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="(829 Voted)" />
-
-        <LinearLayout
-            android:id="@+id/layer1"
-            android:layout_width="wrap_content"
+            android:layout_below="@+id/relative1"
             android:layout_centerInParent="true"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/answer"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/wrong" />
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="Who was the first prime minister of India ?"
+            android:textColor="@color/Black"
+            android:textSize="16dp" />
+
+        <com.pixelcan.inkpageindicator.InkPageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/question"
+            app:animationDuration="320"
+            app:currentPageIndicatorColor="@color/colorPrimaryDark"
+            app:dotDiameter="8dp"
+            app:dotGap="8dp"
+            app:pageIndicatorColor="@color/Grey" />
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_below="@+id/indicator">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginTop="4dp"></android.support.v4.view.ViewPager>
+
             <TextView
-                android:id="@+id/answerMessage"
+                android:id="@+id/votes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"
-                android:textSize="24dp"
-                android:textColor="@color/white"
-                android:text="You're Wrong" />
-            <TextView
-                android:id="@+id/ansSubtitle"
+                android:text="(829 Voted)" />
+
+            <LinearLayout
+                android:id="@+id/layer1"
                 android:layout_width="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:textColor="@color/white"
                 android:layout_height="wrap_content"
-                android:textSize="12dp"
-                android:text="Slide to know right answer" />
-        </LinearLayout>
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/answer"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/wrong" />
+
+                <TextView
+                    android:id="@+id/answerMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="You're Wrong"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/ansSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Slide to know right answer"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="11 %"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="answered like you"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/swiperight"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/swiperighth" />
+
+            <ImageView
+                android:id="@+id/swipeleft"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/swipelefth" />
+        </RelativeLayout>
+
         <LinearLayout
-            android:id="@+id/layer2"
-            android:layout_marginBottom="10dp"
-            android:layout_width="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative2"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"
-                android:textSize="20dp"
-                android:textColor="@color/white"
-                android:text="11 %" />
-            <TextView
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/message"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@+id/message"
+                    android:text="10" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:text="answered like you" />
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@+id/share"
+                    android:text="10" />
+
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/share" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/fav" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@+id/like"
+                    android:text="10" />
+            </RelativeLayout>
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="2dp"
-            android:src="@drawable/swiperight"
-            android:id="@+id/swiperight"/>
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/swipeleft"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:id="@+id/swipeleft" />
     </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/linear1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/relative2"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        android:weightSum="3">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/message"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_message_black_18dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="6dp"
-                android:layout_toRightOf="@+id/message"
-                android:text="10" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/share"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_share_black_18dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="6dp"
-                android:layout_toRightOf="@+id/share"
-                android:text="10" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/like"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_favorite_border_black_18dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="6dp"
-                android:layout_toRightOf="@+id/like"
-                android:text="10" />
-        </RelativeLayout>
-    </LinearLayout>
-
-
 </RelativeLayout>

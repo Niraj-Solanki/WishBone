@@ -36,28 +36,29 @@ import layout.ProfileFragment;
 public class Home extends AppCompatActivity {
 
     private ViewPager viewPager;
-    private int[] layouts;
     ImageView imv, userHome, userProfile;
     FrameLayout frameLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+toolbar.setTitle("News Feed");
         // user Profile blur in background
         imv = (ImageView) findViewById(R.id.profileblurr);
         Bitmap icon = BitmapFactory.decodeResource(getResources(),
-                R.drawable.userprofile);
+                R.drawable.profilew);
         Bitmap bb = Blur.blur(getApplicationContext(), icon);
         imv.setBackgroundDrawable(new BitmapDrawable(getResources(), bb));
-        frameLayout=(FrameLayout)findViewById(R.id.frame_container);
+        frameLayout = (FrameLayout) findViewById(R.id.frame_container);
         userHome = (ImageView) findViewById(R.id.userHome);
         userProfile = (ImageView) findViewById(R.id.userProfile);
         userHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                toolbar.setTitle("News Feed");
                 frameLayout.setVisibility(View.GONE);
                 viewPager.setVisibility(View.VISIBLE);
                 viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
@@ -66,6 +67,7 @@ public class Home extends AppCompatActivity {
         userProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                toolbar.setTitle("Profile");
                 frameLayout.setVisibility(View.VISIBLE);
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 ft.replace(R.id.frame_container, new ProfileFragment());
@@ -86,9 +88,14 @@ public class Home extends AppCompatActivity {
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
 
-
+        load();
     }
 
+    public void load() {
+        frameLayout.setVisibility(View.GONE);
+        viewPager.setVisibility(View.VISIBLE);
+        viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+    }
 
     private class MyPagerAdapter extends FragmentPagerAdapter {
 

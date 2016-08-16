@@ -14,12 +14,13 @@
         android:id="@+id/profileblurr"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop" />
+        android:scaleType="fitXY" />
 
     <FrameLayout
         android:id="@+id/frame_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
     <android.support.v4.view.ViewPager
         android:visibility="gone"
         android:id="@+id/view_pager"
@@ -28,6 +29,5 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="80dp"
-        android:background="@color/transparent" />
+        android:layout_marginBottom="80dp" />
 </RelativeLayout>

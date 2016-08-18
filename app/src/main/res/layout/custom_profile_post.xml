@@ -20,22 +20,22 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_below="@+id/question"
-    android:layout_height="80dp">
+    android:layout_height="90dp">
 
     <ImageView
         android:alpha=".9"
         android:id="@+id/postimage"
         android:layout_width="match_parent"
-        android:layout_height="800dp"
+        android:layout_height="90dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/deepika" />
+        android:src="@drawable/deepikax" />
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:layout_marginLeft="2dp"
+        android:layout_marginLeft="4dp"
         android:paddingTop="2dp"
         android:background="@color/Grey"
         android:weightSum="3">
@@ -47,16 +47,18 @@
 
             <ImageView
                 android:id="@+id/message"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
                 android:src="@drawable/chat" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="6dp"
+
                 android:textColor="@color/white"
-                android:textSize="10dp"
+                android:layout_marginLeft="6dp"
+                android:textSize="8dp"
+                android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/message"
                 android:text="10" />
         </RelativeLayout>
@@ -68,15 +70,18 @@
 
             <ImageView
                 android:id="@+id/share"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
                 android:src="@drawable/share" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="10dp"
+                android:layout_marginLeft="6dp"
+                android:textSize="8dp"
+                android:layout_centerVertical="true"
+
                 android:layout_toRightOf="@+id/share"
                 android:text="10" />
         </RelativeLayout>
@@ -88,14 +93,17 @@
 
             <ImageView
                 android:id="@+id/like"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
                 android:src="@drawable/fav" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="10dp"
+                android:layout_marginLeft="6dp"
+                android:textSize="8dp"
+                android:layout_centerVertical="true"
+
                 android:textColor="@color/white"
                 android:layout_toRightOf="@+id/like"
                 android:text="10" />

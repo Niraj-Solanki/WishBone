@@ -12,7 +12,7 @@
         tools:replace="android:label">
         <activity
             android:name=".Home"
-            android:label="News Feed"
+            android:label="LiveVotes"
             tools:replace="name, label"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

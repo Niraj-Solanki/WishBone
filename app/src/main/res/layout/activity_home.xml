@@ -35,13 +35,14 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="@color/white"
+            android:padding="6dp"
             android:orientation="horizontal"
             android:weightSum="8">
 
             <ImageView
                 android:id="@+id/userHome"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_weight="1.5"
                 android:padding="6dp"
                 android:src="@drawable/home" />
@@ -53,8 +54,8 @@
                 android:background="@color/grey_dark"/>
 
             <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_weight="1.5"
                 android:padding="6dp"
                 android:src="@drawable/cart" />
@@ -79,8 +80,8 @@
                 android:background="@color/grey_dark" />
 
             <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_weight="1.5"
                 android:padding="6dp"
                 android:src="@drawable/leaderboard" />
@@ -92,8 +93,8 @@
 
             <ImageView
                 android:id="@+id/userProfile"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_weight="1.5"
                 android:padding="6dp"
                 android:src="@drawable/profile" />

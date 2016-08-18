@@ -14,76 +14,96 @@
         android:layout_height="wrap_content"
         android:background="@color/transparentDark"
         android:padding="6dp">
-
+<RelativeLayout
+    android:id="@+id/relativex"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/profile_image"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:scaleType="centerCrop"
             android:src="@drawable/profilew" />
 
-        <TextView
-            android:id="@+id/user"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="26dp"
             android:layout_toRightOf="@id/profile_image"
-            android:text="Kriti Senon"
-            android:textColor="@color/white"
-            android:textSize="18dp" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/uniqueid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/user"
-            android:layout_marginLeft="6dp"
-            android:layout_toRightOf="@id/profile_image"
-            android:text="kriti.121"
-            android:textColor="@color/Grey" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/uniqueid"
-            android:layout_marginLeft="6dp"
-            android:layout_marginTop="4dp"
-            android:layout_toRightOf="@id/profile_image"
-            android:text="15220 Coins earned"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:text="Kriti Senon"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/uniqueid"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:text="kriti.121"
+                android:textColor="@color/Grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text="15220 Coins earned"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+        </LinearLayout>
 
 
         <ImageView
+            android:id="@+id/settingprofile"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="6dp"
+            android:layout_marginRight="8dp"
             android:layout_marginTop="6dp"
             android:src="@drawable/setting" />
+
+    <TextView
+        android:layout_below="@id/settingprofile"
+        android:layout_marginTop="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rectangle_border_white"
+        android:text="Edit Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/profile_image"
+            android:layout_below="@+id/relativex"
             android:layout_marginBottom="6dp"
             android:layout_marginTop="20dp"
-
             android:orientation="horizontal"
             android:weightSum="3">
 
             <RelativeLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/postText"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="16dp"
                     android:layout_centerHorizontal="true"
                     android:text="Posts"
                     android:textColor="@color/white" />
@@ -96,8 +116,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="1dp"
                     android:text="156"
-                    android:textStyle="bold"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
             </RelativeLayout>
 
             <LinearLayout
@@ -108,14 +128,14 @@
                 android:background="@color/white" />
 
             <RelativeLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/followingText"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="16dp"
                     android:layout_centerHorizontal="true"
                     android:text="Following"
                     android:textColor="@color/white" />
@@ -128,8 +148,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="1dp"
                     android:text="1.5K"
-                    android:textStyle="bold"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
             </RelativeLayout>
 
             <LinearLayout
@@ -140,14 +160,14 @@
                 android:background="@color/white" />
 
             <RelativeLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/followersText"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="16dp"
                     android:layout_centerHorizontal="true"
                     android:text="Followers"
                     android:textColor="@color/white" />
@@ -160,8 +180,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="1dp"
                     android:text="3.6K"
-                    android:textStyle="bold"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>
